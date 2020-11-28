@@ -1,0 +1,25 @@
+@import "tools/_mixins";
+@import "config/_colors";
+@import "config/_fonts";
+
+.l-header {
+    &__box{
+        @include width-height(100%,100%);
+        @include flex(center);
+        &--logs{
+            justify-content: flex-end;
+        }
+    }
+
+    &__content{
+        @include padding(all,35px 0 40px);
+    }
+
+    &__bar{
+        @include width-height($height:100%);
+        @include border(all);
+
+    }
+}
+
+
