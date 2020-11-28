@@ -1,0 +1,20 @@
+@mixin padding( $direction:all, $size: 15px) {
+    @if $direction == all {
+      padding: $size;
+    } @else {
+      padding-#{$direction}: $size;
+    }
+  }
+
+@mixin flex($align:center, $justify:initial,$wrap: initial,$direction: initial) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-wrap: $wrap;
+  flex-direction: $direction;
+}
+
+@mixin width-height($width:auto, $height:auto){
+  width:$width;
+  height:$height;
+}
