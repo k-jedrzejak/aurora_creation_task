@@ -13,6 +13,13 @@
         @include border();
         outline:none;
         @include transition();
-        
+        &:hover{
+            @include border(bottom,$color:$main-color);
+            box-shadow: 0 3px 2px -2px $main-color;
+        }
+        &:focus{
+            @include border(bottom,$color:$main-color);
+            box-shadow: 0 3px 2px -2px $main-color;
+        }
     }
 }
