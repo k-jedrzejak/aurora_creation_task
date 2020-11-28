@@ -1,0 +1,25 @@
+@import "tools/_mixins";
+@import "config/_colors";
+@import "config/_fonts";
+
+
+.c-nav {
+    @include width-height(100%);
+    @include flex(center,space-between);
+    @include padding(all, 25px 0);
+    @include border();
+    list-style: none;
+    &__link{
+        font-size: $lg-font;
+        font-weight: $bold;
+        color: $dark-color;
+        text-decoration: none;
+        text-transform: uppercase;
+        @include padding(right, 5px);
+        @include transition();
+        &:hover{
+            color:$main-color;
+        }
+    }
+}
+
