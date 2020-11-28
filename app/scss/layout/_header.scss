@@ -17,10 +17,11 @@
 
     &__bar{
         @include width-height($height:100%);
-        @include border(all);
+        @include border();
     }
     &__bar-btn{
         @include padding(all, 0 20px);
+        @include flex();
         &--first{
             @include padding(all, 0)
         }
