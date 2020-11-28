@@ -1,0 +1,17 @@
+@import "tools/_mixins";
+@import "config/_colors";
+@import "config/_fonts";
+
+.c-counter {
+    @include width-height(1.2rem, 1.2rem);
+    position: absolute;
+    left: 15px;
+    bottom: -8px;
+    border-radius: 50%;
+    background-color: $main-color; 
+    @include flex(center, center);
+    &__label {
+        font-size: $sm-font;
+        color: $white-color;
+    }
+}
