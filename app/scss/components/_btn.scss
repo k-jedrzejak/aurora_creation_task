@@ -7,6 +7,9 @@
     cursor: pointer;
     border: none;
     background: transparent;
+    &:focus{
+        outline:none;
+    }
     &--search{
         position: absolute;
         top: 50%;
