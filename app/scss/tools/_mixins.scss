@@ -6,7 +6,7 @@
     }
   }
 
-@mixin border($direction:all, $width:1px, $style:solid, $color:$gray-color){
+@mixin border($direction:bottom, $width:1px, $style:solid, $color:$gray-color){
   @if $direction == all {
     border: $width $style $color;
   } @else {

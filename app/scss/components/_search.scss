@@ -1,0 +1,18 @@
+@import "tools/_mixins";
+@import "config/_colors";
+@import "config/_fonts";
+
+
+.c-search{
+    @include width-height(90%);
+    @include padding(all,10px 15px);
+    &__input{
+        @include width-height(100%);
+        @include padding(all, 5px 25px 5px 10px);
+        border:none;
+        @include border();
+        outline:none;
+        @include transition();
+        
+    }
+}
