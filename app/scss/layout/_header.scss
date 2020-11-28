@@ -4,7 +4,7 @@
 
 .l-header {
     &__box{
-        @include width-height(100%,100%);
+        @include width-height(100%,40px);
         @include flex(center);
         &--logs{
             justify-content: flex-end;
@@ -18,7 +18,12 @@
     &__bar{
         @include width-height($height:100%);
         @include border(all);
-
+    }
+    &__bar-btn{
+        @include padding(all, 0 20px);
+        &--first{
+            @include padding(all, 0)
+        }
     }
 }
 
