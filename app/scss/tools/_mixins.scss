@@ -6,6 +6,15 @@
     }
   }
 
+@mixin border($direction:all, $width:1px, $style:solid, $color:$gray-color){
+  @if $direction == all {
+    border: $width $style $color;
+  } @else {
+    border-#{$direction}: $width $style $color;
+  }
+  
+}
+
 @mixin flex($align:center, $justify:initial,$wrap: initial,$direction: initial) {
   display: flex;
   align-items: $align;
