@@ -12,5 +12,14 @@
     }
     &--bar{
         @include flex();
+        @include width-height(auto, 100%);
     }
+    &--logs{
+        @include border(right);
+        &:first-child{
+            @include border(left); 
+        }
+    }
+
+
 }
