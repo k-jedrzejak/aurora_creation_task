@@ -1,6 +1,7 @@
 @import "tools/_mixins";
 @import "config/_colors";
 @import "config/_fonts";
+@import "config/_breakpoints";
 @import "general/_general";
 @import "layout/_header";
 @import "components/_container";
@@ -10,4 +11,5 @@
 @import "components/_search";
 @import "components/_btn";
 @import "components/_counter";
-@import "components/_cart"
+@import "components/_cart";
+@import "components/_burger";
