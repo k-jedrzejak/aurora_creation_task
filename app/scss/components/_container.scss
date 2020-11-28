@@ -7,5 +7,5 @@
     @include width-height(100%,100%);
     max-width: 1200px;
     margin: auto;
-    @include flex(end,space-between);
+    @include flex(flex-end,space-between);
 }
