@@ -1,0 +1,12 @@
+@import "tools/_mixins";
+@import "config/_colors";
+@import "config/_fonts";
+
+.c-cart{
+    &__label{
+        font-weight: $bold;
+        position: absolute;
+        top: 5px;
+        left: 45px;
+    }
+}
