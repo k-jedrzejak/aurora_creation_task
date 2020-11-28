@@ -28,13 +28,16 @@
     }
     &__logo{
         flex-basis: 35%;
+        -ms-flex-preferred-size: 35%;
     }
     &__search {
         flex-basis: 45%; 
+        -ms-flex-preferred-size: 45%; 
     }
     &__cart{
         flex-basis: 20%;
-        @include padding(10px);
+        -ms-flex-preferred-size: 20%;
+        @include padding(all,10px);
     }
 }
 

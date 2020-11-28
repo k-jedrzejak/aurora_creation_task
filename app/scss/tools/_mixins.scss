@@ -15,13 +15,18 @@
   
 }
 
-@mixin flex($align:center, $justify:initial,$wrap: initial,$direction: initial) {
+@mixin flex($align:center, $justify:initial) {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: $align;
-  justify-content: $justify;
-  flex-wrap: $wrap;
-  flex-direction: $direction;
-}
+  -webkit-box-align: $align;
+      -ms-flex-align: $align;
+          align-items: $align;
+  -webkit-box-pack: $justify;
+      -ms-flex-pack: $justify;
+          justify-content: $justify;
+ }
+
 
 @mixin width-height($width:auto, $height:auto){
   width:$width;
@@ -30,4 +35,6 @@
 
 @mixin transition{
   transition: .2s linear;
+  -webkit-transition: .2s linear;
+  -o-transition: .2s linear;
 }
