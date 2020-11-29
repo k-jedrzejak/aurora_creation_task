@@ -23,7 +23,6 @@
         @media screen and (max-width: $sm-screen) {
             @include border(none);
             @include border(left);
-            
         }
         &:first-child {
             @include border(left);
