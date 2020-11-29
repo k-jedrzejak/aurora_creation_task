@@ -2,24 +2,47 @@
 @import "../config/_colors";
 @import "../config/_fonts";
 
-.c-burger{
-    @include width-height(30px,30px);
-    @include flex(center,space-around);
-    -webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;
-    flex-direction: column;
+.c-burger {
+    @include width-height(30px, 30px);
+    display: inline-block;
     z-index: 1;
     cursor: pointer;
-    &:hover{
-        .c-burger__part{
-            background: $main-color; 
+    &:hover {
+        .c-burger__part {
+            background: $main-color;
         }
     }
     &__part {
         display: block;
-        @include width-height(30px,3px);
+        @include width-height(30px, 2px);
         background: $dark-color;
         @include transition();
-        
-      }
- 
+        &:nth-child(1) {
+            top: 16px;
+        }
+
+        &:nth-child(2) {
+            top: 24px;
+        }
+
+        &:nth-child(3) {
+            top: 32px;
+        }
+    }
+}
+
+.is_active {
+    .c-burger__part:nth-child(1) {
+        top: 25px;
+        -webkit-transform: rotateZ(45deg);
+        transform: rotateZ(45deg);
+    }
+    .c-burger__part:nth-child(2) {
+        background: transparent;
+    }
+    .c-burger__part:nth-child(3) {
+        top: 21px;
+        -webkit-transform: rotateZ(-45deg);
+        transform: rotateZ(-45deg);
+    }
 }
