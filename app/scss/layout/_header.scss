@@ -28,7 +28,10 @@
         @include padding(all, 0 20px);
         @include flex();
         &--first{
-            @include padding(all, 0)
+            @media screen and (min-width: $md-screen){
+                @include padding(all, 0)
+            }
+            
         }
     }
     &__logo{
