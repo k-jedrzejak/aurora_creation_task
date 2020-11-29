@@ -2,24 +2,28 @@
 @import "config/_colors";
 @import "config/_fonts";
 
-.c-link{
+.c-link {
     color: $dark-color;
     font-size: $sm-font;
     text-decoration: none;
     @include transition();
-    &:hover{
+    &:hover {
         color: $main-color;
     }
-    &--bar{
-        @include flex();
+    &--bar {
         @include width-height(auto, 100%);
-    }
-    &--logs{
-        @include border(right);
-        &:first-child{
-            @include border(left); 
+        @include flex();
+        @media screen and (max-width: $sm-screen) {
+            @include width-height(100%);
+            @include flex(center, center);
+            @include border(left);
+            @include border(top);
         }
     }
-
-
+    &--logs {
+        @include border(right);
+        &:first-child {
+            @include border(left);
+        }
+    }
 }
