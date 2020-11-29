@@ -5,11 +5,17 @@
 .c-counter {
     @include width-height(1.2rem, 1.2rem);
     position: absolute;
-    left: 15px;
+    left: -20px;
     bottom: -8px;
     border-radius: 50%;
-    background-color: $main-color; 
+    background-color: $main-color;
     @include flex(center, center);
+    -webkit-box-pack: center;
+    @media screen and (max-width: $md-screen) {
+        position: absolute;
+        left: 20px;
+        bottom: -22px;
+    }
     &__label {
         font-size: $sm-font;
         color: $white-color;
