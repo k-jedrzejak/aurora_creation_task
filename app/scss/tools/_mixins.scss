@@ -9,7 +9,11 @@
 @mixin border($direction:bottom, $width:1px, $style:solid, $color:$gray-color){
   @if $direction == all {
     border: $width $style $color;
-  } @else {
+  }
+  @else if $direction == none {
+    border: none;
+  }
+   @else{
     border-#{$direction}: $width $style $color;
   }
   
