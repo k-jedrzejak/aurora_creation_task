@@ -4,6 +4,7 @@
 
 .c-search {
     @include width-height(90%);
+    @include relative;
     @include padding(all, 10px 15px);
     &__input {
         @include width-height(100%);
