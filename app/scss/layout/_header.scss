@@ -13,6 +13,11 @@
 
     &__content{
         @include padding(all,35px 0 40px);
+        @media screen and (max-width: $md-screen) {
+            @include padding(all,0 20px);
+            .c-container{flex-wrap:wrap;}
+           
+        } 
     }
 
     &__bar{
@@ -29,6 +34,12 @@
     &__logo{
         flex-basis: 35%;
         -ms-flex-preferred-size: 35%;
+        @media screen and (max-width: $md-screen) {
+            @include padding(all, 10px);
+            -ms-flex-preferred-size:100%;
+            flex-basis: 100%;
+            margin-bottom: 40px;
+        } 
     }
     &__search {
         flex-basis: 45%; 
@@ -38,6 +49,9 @@
         flex-basis: 20%;
         -ms-flex-preferred-size: 20%;
         @include padding(all,10px);
+        @media screen and (max-width: $md-screen) {
+            @include padding(all,);
+        } 
     }
 }
 
