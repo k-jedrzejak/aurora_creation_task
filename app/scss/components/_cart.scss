@@ -8,5 +8,18 @@
         position: absolute;
         top: 9px;
         left: 45px;
+        @media screen and (max-width: $md-screen) {
+            display: block;
+            position: relative;
+            top: 5px;
+            left:0px;
+        }
+    }
+    &__counter{
+        @media screen and (max-width: $md-screen){
+            position: absolute;
+            right: 35px;
+            bottom: 35px;
+        }
     }
 }
