@@ -1,55 +1,56 @@
-@mixin padding( $direction:all, $size: 15px) {
-    @if $direction == all {
-      padding: $size;
-    } @else {
-      padding-#{$direction}: $size;
-    }
-  }
-
-@mixin border($direction:bottom, $width:1px, $style:solid, $color:$gray-color){
+@mixin padding($direction: all, $size: 15px) {
   @if $direction == all {
-    border: $width $style $color;
+    padding: $size;
+  } @else {
+    padding-#{$direction}: $size;
   }
-  @else if $direction == none {
-    border: none;
-  }
-   @else{
-    border-#{$direction}: $width $style $color;
-  }
-  
 }
 
-@mixin flex($align:center, $justify:initial) {
+@mixin border($direction: bottom, $width: 1px, $style: solid, $color: $gray-color) {
+  @if $direction == all {
+    border: $width $style $color;
+  } @else if $direction == none {
+    border: none;
+  } @else {
+    border-#{$direction}: $width $style $color;
+  }
+}
+
+@mixin flex($align: center, $justify: initial) {
   display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: $align;
-      -ms-flex-align: $align;
-          align-items: $align;
-  -webkit-box-pack: $justify;
-      -ms-flex-pack: $justify;
-          justify-content: $justify;
+  -webkit-align-items: $align;
+  -moz-box-align: $align;
+  -ms-flex-align: $align;
+  align-items: $align;
+  -webkit-justify-content: $justify;
+  -moz-box-pack: $justify;
+  -ms-flex-pack: $justify;
+  justify-content: $justify;
 }
 
-@mixin flex-basis($basis){
+@mixin flex-basis($basis) {
   -ms-flex-preferred-size: $basis;
   flex-basis: $basis;
 }
 
-@mixin flex-direct($direct){
+@mixin flex-direct($direct) {
   -webkit-box-orient: $direct;
-  ;-webkit-box-direction: $direct;
+  -webkit-box-direction: $direct;
   -ms-flex-direction: $direct;
   flex-direction: $direct;
 }
 
-
-@mixin width-height($width:auto, $height:auto){
-  width:$width;
-  height:$height;
+@mixin width-height($width: auto, $height: auto) {
+  width: $width;
+  height: $height;
 }
 
-@mixin transition($delay:.2s, ){
+@mixin transition($delay: 0.2s) {
   transition: $delay linear;
   -webkit-transition: $delay linear;
   -o-transition: $delay linear;
