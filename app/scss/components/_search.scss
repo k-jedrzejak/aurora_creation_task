@@ -22,7 +22,7 @@
             -webkit-box-shadow: 0 3px 2px -2px $main-color;
         }
     }
-    @media screen and (max-width: $sm-screen) {
+    @media screen and (max-width: $md-screen) {
         @include width-height(100%);
     }
 }
