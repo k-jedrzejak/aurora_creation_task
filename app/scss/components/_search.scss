@@ -2,24 +2,27 @@
 @import "config/_colors";
 @import "config/_fonts";
 
-
-.c-search{
+.c-search {
     @include width-height(90%);
-    @include padding(all,10px 15px);
-    &__input{
+    @include padding(all, 10px 15px);
+    &__input {
         @include width-height(100%);
         @include padding(all, 5px 25px 5px 10px);
-        border:none;
+        border: none;
         @include border();
-        outline:none;
+        outline: none;
         @include transition();
-        &:hover{
-            @include border(bottom,$color:$main-color);
+        &:hover {
+            @include border(bottom, $color: $main-color);
             box-shadow: 0 3px 2px -2px $main-color;
         }
-        &:focus{
-            @include border(bottom,$color:$main-color);
+        &:focus {
+            @include border(bottom, $color: $main-color);
             box-shadow: 0 3px 2px -2px $main-color;
+            -webkit-box-shadow: 0 3px 2px -2px $main-color;
         }
+    }
+    @media screen and (max-width: $sm-screen) {
+        @include width-height(100%);
     }
 }
