@@ -44,7 +44,6 @@
             @include flex-basis(100%);
             margin-bottom: 15px;
         }
-    
     }
     &__search {
         @include flex-basis(45%);
@@ -58,9 +57,9 @@
     }
     &__cart {
         @include flex-basis(20%);
-        @include padding(all, 10px);
+        @include padding(all, 10px 20px);
         @media screen and (max-width: $md-screen) {
-            @include padding(all,15px 5px);
+            @include padding(all, 15px 5px);
             text-align: right;
         }
         @media screen and (max-width: $sm-screen) {
