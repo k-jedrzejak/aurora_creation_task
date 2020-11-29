@@ -23,6 +23,9 @@
         text-transform: uppercase;
         @include padding(right, 5px);
         @include transition(0.5s);
+        @media screen and (max-width: $lg-screen){
+            @include padding(all, 5px);
+        }
         &:hover {
             color: $main-color;
         }

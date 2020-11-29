@@ -16,8 +16,11 @@
 
     &__content {
         @include padding(all, 35px 0 40px);
+        @media screen and (max-width: $lg-screen){
+            @include padding(all, 35px 20px 40px);  
+        }
         @media screen and (max-width: $md-screen) {
-            @include padding(all, 0 20px);
+            @include padding(all, 0 15px);
             .c-container {
                 -ms-flex-wrap: wrap;
                 flex-wrap: wrap;
@@ -32,7 +35,7 @@
         @include padding(all, 0 20px);
         @include flex();
         &--first {
-            @media screen and (min-width: $md-screen) {
+            @media screen and (min-width: $lg-screen) {
                 @include padding(all, 0);
             }
         }
