@@ -47,9 +47,12 @@
 
 .l-header__content {
   padding: 35px 0 40px; }
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1224px) {
     .l-header__content {
-      padding: 0 20px; }
+      padding: 35px 20px 40px; } }
+  @media screen and (max-width: 998px) {
+    .l-header__content {
+      padding: 0 15px; }
       .l-header__content .c-container {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap; } }
@@ -75,14 +78,14 @@
   -moz-box-pack: initial;
   -ms-flex-pack: initial;
   justify-content: initial; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1224px) {
     .l-header__bar-btn--first {
       padding: 0; } }
 
 .l-header__logo {
   -ms-flex-preferred-size: 35%;
   flex-basis: 35%; }
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 998px) {
     .l-header__logo {
       padding: 10px;
       -ms-flex-preferred-size: 100%;
@@ -93,7 +96,7 @@
   -ms-flex-preferred-size: 45%;
   flex-basis: 45%;
   position: relative; }
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 998px) {
     .l-header__search {
       -ms-flex-preferred-size: 65%;
       flex-basis: 65%; } }
@@ -107,7 +110,7 @@
   -ms-flex-preferred-size: 20%;
   flex-basis: 20%;
   padding: 10px 20px; }
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 998px) {
     .l-header__cart {
       padding: 10px 5px;
       text-align: right; } }
@@ -158,7 +161,7 @@
   padding: 25px 0;
   border-bottom: 1px solid #d3d3d3;
   list-style: none; }
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 998px) {
     .c-nav {
       display: block;
       transition: 0.5s linear;
@@ -176,14 +179,17 @@
     transition: 0.5s linear;
     -webkit-transition: 0.5s linear;
     -o-transition: 0.5s linear; }
+    @media screen and (max-width: 1224px) {
+      .c-nav__link {
+        padding: 5px; } }
     .c-nav__link:hover {
       color: #ecc7d0; }
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 998px) {
     .c-nav__item {
       padding: 5px; } }
   .c-nav-box {
     overflow: hidden; }
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 998px) {
       .c-nav-box {
         position: absolute;
         top: 40px;
@@ -194,7 +200,7 @@
         top: 81px; } }
     .c-nav-box__head {
       display: none; }
-      @media screen and (max-width: 1024px) {
+      @media screen and (max-width: 998px) {
         .c-nav-box__head {
           display: inline-block;
           position: absolute;
@@ -206,7 +212,7 @@
           position: absolute;
           top: 10px;
           right: 30px; } }
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 998px) {
       .c-nav-box__content {
         width: auto;
         height: auto;
@@ -273,7 +279,7 @@
         justify-content: center; } }
   .c-link--logs {
     border-right: 1px solid #d3d3d3; }
-    @media screen and (max-width: 624px) {
+    @media screen and (max-width: 1224px) {
       .c-link--logs {
         border: none;
         border-left: 1px solid #d3d3d3; } }
@@ -311,7 +317,7 @@
       border-bottom: 1px solid #ecc7d0;
       box-shadow: 0 3px 2px -2px #ecc7d0;
       -webkit-box-shadow: 0 2px 2px -2px #ecc7d0; }
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 998px) {
     .c-search {
       width: 100%;
       height: auto; } }
@@ -354,7 +360,7 @@
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-pack: center; }
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 998px) {
     .c-counter {
       position: absolute;
       bottom: -22px;
@@ -370,7 +376,7 @@
     font-weight: 700;
     position: relative;
     top: -13px; }
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 998px) {
       .c-cart__label {
         display: block;
         position: relative;
@@ -378,7 +384,7 @@
         left: 0px; } }
   .c-cart__counter {
     position: relative; }
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 998px) {
       .c-cart__counter {
         position: absolute;
         right: 35px;
