@@ -16,12 +16,14 @@
         @media screen and (max-width: $sm-screen) {
             @include width-height(100%);
             @include flex(center, center);
-            @include border(left);
-            @include border(top);
         }
     }
     &--logs {
         @include border(right);
+        @media screen and (max-width: $sm-screen) {
+            @include border(left);
+            @include border(top);
+        }
         &:first-child {
             @include border(left);
         }
