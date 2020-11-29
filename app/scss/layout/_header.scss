@@ -3,59 +3,68 @@
 @import "config/_fonts";
 
 .l-header {
-    &__box{
-        @include width-height(100%,40px);
+    &__box {
         @include flex(center);
-        &--logs{
-            justify-content: flex-end;
+        @include flex-basis(50%);
+        @media screen and (max-width: $sm-screen) {
+            @include flex-direct(column);
+        }
+        &--logs {
+            @include flex(center, flex-end);
         }
     }
 
-    &__content{
-        @include padding(all,35px 0 40px);
+    &__content {
+        @include padding(all, 35px 0 40px);
         @media screen and (max-width: $md-screen) {
-            @include padding(all,0 20px);
-            .c-container{flex-wrap:wrap;}
-           
-        } 
+            @include padding(all, 0 20px);
+            .c-container {
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            }
+        }
     }
-
-    &__bar{
-        @include width-height($height:100%);
+    &__bar {
         @include border();
     }
-    &__bar-btn{
+    &__bar-btn {
+        @include width-height(auto, 40px);
         @include padding(all, 0 20px);
         @include flex();
-        &--first{
-            @media screen and (min-width: $md-screen){
-                @include padding(all, 0)
+        &--first {
+            @media screen and (min-width: $md-screen) {
+                @include padding(all, 0);
             }
-            
         }
     }
-    &__logo{
-        flex-basis: 35%;
-        -ms-flex-preferred-size: 35%;
+    &__logo {
+        @include flex-basis(35%);
         @media screen and (max-width: $md-screen) {
             @include padding(all, 10px);
-            -ms-flex-preferred-size:100%;
-            flex-basis: 100%;
+            @include flex-basis(100%);
             margin-bottom: 40px;
-        } 
+        }
+        @media screen and (max-width: $sm-screen) {
+            margin-bottom: 15px;
+        }
     }
     &__search {
-        flex-basis: 45%; 
-        -ms-flex-preferred-size: 45%; 
+        @include flex-basis(45%);
+        @media screen and (max-width: $sm-screen) {
+            @include flex-basis(100%);
+            order: 3;
+        }
     }
-    &__cart{
-        flex-basis: 20%;
-        -ms-flex-preferred-size: 20%;
-        @include padding(all,10px);
+    &__cart {
+        @include flex-basis(20%);
+        @include padding(all, 10px);
         @media screen and (max-width: $md-screen) {
-            @include padding(all,);
-        } 
+            @include padding(all);
+        }
+        @media screen and (max-width: $sm-screen) {
+            @include flex-basis(100%);
+            text-align: right;
+            margin-bottom: 40px;
+        }
     }
 }
-
-
