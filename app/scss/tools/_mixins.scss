@@ -27,6 +27,13 @@
           justify-content: $justify;
  }
 
+@mixin flex-basis($basis){
+  -webkit-box-orient: $basis;
+  -webkit-box-direction: $basis;
+  -ms-flex-direction: $basis;
+  flex-direction: $basis;
+ }
+
 
 @mixin width-height($width:auto, $height:auto){
   width:$width;
