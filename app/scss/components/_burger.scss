@@ -1,0 +1,25 @@
+@import "../tools/_mixins";
+@import "../config/_colors";
+@import "../config/_fonts";
+
+.c-burger{
+    @include width-height(30px,30px);
+    @include flex(center,space-around);
+    -webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;
+    flex-direction: column;
+    z-index: 1;
+    cursor: pointer;
+    &:hover{
+        .c-burger__part{
+            background: $main-color; 
+        }
+    }
+    &__part {
+        display: block;
+        @include width-height(30px,3px);
+        background: $dark-color;
+        @include transition();
+        
+      }
+ 
+}
