@@ -13,22 +13,22 @@
         background: $main-color;
         @include transition();
         &:nth-child(1) {
-            top: 16px;
+            @include relative(16px);
         }
 
         &:nth-child(2) {
-            top: 24px;
+            @include relative(24px);
         }
 
         &:nth-child(3) {
-            top: 32px;
+            @include relative(32px);
         }
     }
 }
 
 .is_active {
     .c-burger__part:nth-child(1) {
-        top: 25px;
+        @include relative(25px);
         -webkit-transform: rotateZ(45deg);
         transform: rotateZ(45deg);
     }
@@ -36,7 +36,7 @@
         background: transparent;
     }
     .c-burger__part:nth-child(3) {
-        top: 21px;
+        @include relative(21px);
         -webkit-transform: rotateZ(-45deg);
         transform: rotateZ(-45deg);
     }
