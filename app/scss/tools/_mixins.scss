@@ -25,14 +25,19 @@
   -webkit-box-pack: $justify;
       -ms-flex-pack: $justify;
           justify-content: $justify;
- }
+}
 
 @mixin flex-basis($basis){
-  -webkit-box-orient: $basis;
-  -webkit-box-direction: $basis;
-  -ms-flex-direction: $basis;
-  flex-direction: $basis;
- }
+  -ms-flex-preferred-size: $basis;
+  flex-basis: $basis;
+}
+
+@mixin flex-direct($direct){
+  -webkit-box-orient: $direct;
+  ;-webkit-box-direction: $direct;
+  -ms-flex-direction: $direct;
+  flex-direction: $direct;
+}
 
 
 @mixin width-height($width:auto, $height:auto){
