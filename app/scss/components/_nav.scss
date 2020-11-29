@@ -2,24 +2,73 @@
 @import "config/_colors";
 @import "config/_fonts";
 
-
 .c-nav {
     @include width-height(100%);
-    @include flex(center,space-between);
+    @include flex(center, space-between);
     @include padding(all, 25px 0);
     @include border();
     list-style: none;
-    &__link{
+    @media screen and (max-width: $md-screen) {
+        display: block;
+        @include transition(0.5s);
+        @include padding(all, 0);
+        @include border(none);
+    }
+    &__link {
         font-size: $lg-font;
         font-weight: $bold;
         color: $dark-color;
         text-decoration: none;
         text-transform: uppercase;
         @include padding(right, 5px);
-        @include transition();
-        &:hover{
-            color:$main-color;
+        @include transition(0.5s);
+        &:hover {
+            color: $main-color;
+        }
+    }
+    &__item {
+        @media screen and (max-width: $md-screen) {
+            @include padding(all, 5px);
+        }
+    }
+    &-box {
+        overflow: hidden;
+        @media screen and (max-width: $md-screen) {
+            position: absolute;
+            top: 40px;
+            right: 0px;
+        }
+        @media screen and (max-width: $sm-screen) {
+            position: absolute;
+            top: 81px;
+        }
+        &__head {
+            display: none;
+            @media screen and (max-width: $md-screen) {
+                display: inline-block;
+                position: absolute;
+                right: 30px;
+                top: 10px;
+            }
+            @media screen and (max-width: $sm-screen) {
+                top: 5px;
+            }
+        }
+        &__content {
+            @media screen and (max-width: $md-screen) {
+                @include width-height();
+                right: -550px;
+                top: 0px;
+                @include padding(all, 70px 50px 30px);
+                background-color: #fff;
+                @include border(all, 2px,solid,$main-color);
+                @include transition(0.5s);
+            }
         }
     }
 }
 
+.is_open {
+    right: 0px;
+    @include transition();
+}
