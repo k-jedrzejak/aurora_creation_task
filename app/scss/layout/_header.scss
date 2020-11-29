@@ -47,6 +47,7 @@
     }
     &__search {
         @include flex-basis(45%);
+        @include relative;
         @media screen and (max-width: $md-screen) {
             @include flex-basis(65%);
         }
@@ -59,7 +60,7 @@
         @include flex-basis(20%);
         @include padding(all, 10px 20px);
         @media screen and (max-width: $md-screen) {
-            @include padding(all, 15px 5px);
+            @include padding(all, 10px 5px);
             text-align: right;
         }
         @media screen and (max-width: $sm-screen) {
