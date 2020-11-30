@@ -279,7 +279,7 @@
         justify-content: center; } }
   .c-link--logs {
     border-right: 1px solid #d3d3d3; }
-    @media screen and (max-width: 1224px) {
+    @media screen and (max-width: 998px) {
       .c-link--logs {
         border: none;
         border-left: 1px solid #d3d3d3; } }
