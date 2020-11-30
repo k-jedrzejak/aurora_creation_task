@@ -20,7 +20,7 @@
     }
     &--logs {
         @include border(right);
-        @media screen and (max-width: $sm-screen) {
+        @media screen and (max-width: $md-screen) {
             @include border(none);
             @include border(left);
         }
