@@ -12,7 +12,7 @@
     }
     &--search{
         @include absolute(50%, 10px);
-        @include padding(0);
+        @include padding(all,0);
         transform: translate(0,-50%);
         -webkit-transform: translate(0, -50%);
         -ms-transform: translate(0, -50%);
