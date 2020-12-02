@@ -16,7 +16,7 @@
   }
 }
 
-@mixin flex($align: center, $justify: initial) {
+@mixin flex($align: center, $justify: null) {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -45,7 +45,7 @@
   flex-direction: $direct;
 }
 
-@mixin width-height($width: auto, $height: auto) {
+@mixin width-height($width: auto, $height: null) {
   width: $width;
   height: $height;
 }
